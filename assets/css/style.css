@@ -183,3 +183,66 @@
     }
   }
 }
+
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(200px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 1.5s ease-out;
+}
+
+.fade-in-right.show {
+  animation: fadeInRight 2s forwards;
+}
+
+
+
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1.5s ease-out;
+}
+
+.fade-in-left.show {
+  animation: fadeInLeft 2s forwards;
+}
+
+.progress-bar {
+  width: 0; /* Initially, the width is 0 until the element is in view */
+  transition: width 2.0s ease-out;
+}
+
+.percentage-text {
+  transition: opacity 2s ease-out; /* Optional to animate the percentage text */
+}
