@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
       setInterval(() => {
         current = (current + 1) % testimonials.length;
         showTestimonial(current);
-      }, 5000);
+      }, 3000);
   
       // Initialize first testimonial
       showTestimonial(current);

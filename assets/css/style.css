@@ -244,5 +244,5 @@
 }
 
 .percentage-text {
-  transition: opacity 2s ease-out; /* Optional to animate the percentage text */
+  transition: opacity 2s ease-out; 
 }
